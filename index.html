@@ -22,7 +22,7 @@
   <body>
     <section class="main-section flex">
       <div class="container flex">
-        <div class="search-div flex">
+        <form class="search-div flex">
           <i class="fa-solid fa-magnifying-glass"></i>
           <p>
             <input
@@ -31,17 +31,20 @@
               placeholder="Search your city..."
             />
           </p>
-        </div>
+        </form>
 
         <div class="showLocationAndResult flex">
-          <h2 class="location">Patna, India</h2>
-          <p class="dateAndTime">current date and time</p>
-          <button class="calcBtn">clouds</button>
-          <div class="iconOfCurrentWhether">iconOfWhether</div>
+          <h2 class="location"></h2>
+          <p class="dateAndTime"></p>
+          <button class="calcBtn"></button>
+          <div class="iconOfCurrentWhether"></div>
 
           <div class="showDegree flex">
-            <h2 class="degree">278</h2>
-            <p class="minMax">Min 277 max 280</p>
+            <h2 class="whetherInDegree"></h2>
+            <div class="weatherMinmax flex">
+              <p class="weatherMin"></p>
+              <p class="weatherMax"></p>
+            </div>
           </div>
         </div>
 
@@ -74,8 +77,13 @@
                 <p  class="whether-pressure">15&#176</p>
             </div>
           </div>
+
         </div>
       </div>
     </section>
+
+
+
+    <script src="script.js"></script>
   </body>
 </html>
