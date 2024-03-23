@@ -35,7 +35,6 @@ body {
   width: 100%;
   justify-content: start;
   position: relative;
-  gap: 1rem;
 
   & #search-field {
     position: relative;
@@ -49,7 +48,7 @@ body {
   & .fa-solid {
     position: relative;
     left: 1rem;
-    left: 2.4rem;
+    left: 1.4rem;
     z-index: 22;
     filter: invert(1);
   }
