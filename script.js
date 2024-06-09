@@ -63,10 +63,10 @@ const getWeatherData = async () => {
         weatherInDegree.innerHTML = `${celsiusTemp.toFixed(2)}&#176;C`;
         let kelvinTempMIn = main.temp_min;
         let celsiusMin = kelvinTempMIn - 273.15; // convert kelvin to celsius
-        weatherMin.innerHTML = `Min: ${celsiusMin.toFixed(2)}&#176`;
+        weatherMin.innerHTML = `Min: ${celsiusMin.toFixed(2)}&#176;C`;
         let kelvinTempMax = main.temp_max;
         let celsiusMax = kelvinTempMax - 273.15;
-        weatherMax.innerHTML = `Max: ${celsiusMax.toFixed(2)}&#176`;
+        weatherMax.innerHTML = `Max: ${celsiusMax.toFixed(2)}&#176;C`;
 
         weatherForcast.innerHTML = `${weather[0].main}`;
         weatherIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${weather[0].icon}@2x.png"/>`
